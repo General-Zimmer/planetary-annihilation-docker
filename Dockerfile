@@ -6,7 +6,7 @@ ARG PANET_PASSWORD
 
 # Download papatcher and use it to download the server
 RUN mkdir -p /patserver && \
-    curl -o /tmp/papatcher.go https://raw.githubusercontent.com/kolorafa/papatcher/patch-1/papatcher.go && \
+    curl -o /tmp/papatcher.go https://raw.githubusercontent.com/General-Zimmer/papatcher/blob/master/papatcher.go && \
     go run /tmp/papatcher.go \
         --stream=${PA_STREAM_NAME} \
         --update-only \
